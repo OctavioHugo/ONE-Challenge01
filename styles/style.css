@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+   font-family: 'Inter'; 
+   background-color: #F3F5FC;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.left{
+    justify-content: space-between;
+}
+
+
+.logo{
+    padding: 1.5em 1em;
+}
+
+.input{
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 80px;
+}
+
+.input-text{
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 2em;
+    line-height: 150%;
+    resize: none;
+    color: #0A3871;
+}
+
+::placeholder {
+    color: #0A3871;
+}
+
+.information {
+    height: 1em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 1em;
+    font-size: 0.75em;
+    font-weight: 400;
+}
+
+.i{
+    padding-right: 0.5em;
+}
+
+.buttons{
+    margin-top: 1em;
+    padding: 0 1em 0 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.5em;
+    
+}
+
+.encrypt {
+    padding: 1.5em;
+    border-radius: 1.5em;
+    background-color: #0A3871;
+    border: none;
+    color: #FFFFFF;
+    font-family: inherit;
+}
+
+.decrypt{
+    padding: 1.5em;
+    border-radius: 1.5em;
+    background-color: transparent;
+    border-color: #0A3871;
+    border-width: 1px;
+    color: #0A3871;
+    font-family: inherit;
+}
+
+.rigth{
+    display: flex;
+    margin: 4em 1.5em 2.5em 1.5em;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    border-radius: 2em;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+
+
+.output-img{
+    display: none;
+}
+
+.output-p{
+    display: block;
+}
+
+.output-message-text{
+    font-style: normal;
+    text-align: center;
+}
+
+.output-messge-text-top{
+    font-weight: 700;
+    font-size: 1.5em;
+    padding: 2em 2em 0 2em;
+    color: #343A40;
+    line-height: 120%;
+}
+
+.output-message-text-bottom{
+    margin-top: 1em;
+    padding: 0 2em 2em 2em;
+    color: #495057;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 150%;
+}
+
+.output-text{
+    display: none;
+    flex-direction: column;
+    padding: 2em 2em 0 2em;
+}
+
+.output-button{
+    display: none;
+    flex-direction: column;
+    padding: 0 2em;
+    margin-bottom: 2em;
+}
+
+.br-output{
+    display: none;
+}
+
+@media only screen and (min-width: 768px){
+    
+    .logo{
+        padding: 4.5625em 2.5em;
+    }
+
+    .input{
+        padding: 7.5em 2.5em 0 2.5em
+    }
+
+    .input-text{
+        padding: 0 2.5em;
+    }
+
+    .information {
+        padding-left: 3.3333em;
+    }
+
+    .buttons{
+        flex-direction: row;
+        padding: 0 2.5em;
+    }
+    
+    .encrypt {
+        width: 50%;
+    }
+
+    .decrypt {
+        width: 50%;
+    }
+
+    .rigth{
+        margin: 5em 2.5em 2.5em 2.5em;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    main{
+        flex-direction: row;
+        width: 100vw;
+        height: 90vh;
+
+    }
+
+    .left{
+        width: 74%;
+    }
+
+    .logo{
+        padding: 2.5em 5.25em;
+    }
+
+    .input{
+        padding: 1.875em 15em 0 15em;
+    }
+
+    .input-text{
+        padding-top: 3.80em;
+    }
+
+    .information{
+        padding: 0 17.5em;
+    }
+
+    .buttons{
+        padding: 0 1.25em 0 13.125em;
+    }
+
+
+    .rigth{
+        margin-top: 2.5em;
+        width: 26%;
+        height: 86vh;
+        justify-content: space-between;
+
+    }
+
+
+    .output-img {
+        display: block;
+        padding-top: 2.125em;
+    }
+
+}
