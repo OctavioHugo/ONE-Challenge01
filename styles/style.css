@@ -71,6 +71,7 @@ main{
     
 }
 
+
 .encrypt {
     padding: 1.5em;
     border-radius: 1.5em;
@@ -78,6 +79,15 @@ main{
     border: none;
     color: #FFFFFF;
     font-family: inherit;
+    transition: box-shadow 0.3s ease-in-out; ;
+}
+
+.encrypt:active{
+    transform: scale(0.98);
+}
+
+.encrypt:hover {
+    box-shadow: 0 0 4px 0 #0A3871 inset, 0 0 8px 4px #0472f8;
 }
 
 .decrypt{
@@ -88,7 +98,17 @@ main{
     border-width: 1px;
     color: #0A3871;
     font-family: inherit;
+    transition: box-shadow 0.3s ease-in-out;
 }
+
+.decrypt:active{
+    transform: scale(0.98);
+}
+
+.decrypt:hover {
+    box-shadow: 0 0 4px 0 #0A3871 inset, 0 0 8px 4px #0472f8;
+}
+
 
 .rigth{
     display: flex;
@@ -165,7 +185,18 @@ main{
     border-width: 1px;
     color: #0A3871;
     font-family: inherit;
+    transition: box-shadow 0.3s ease-in-out;
 }
+
+.copy:active{
+    transform: scale(0.98);
+}
+
+.copy:hover {
+    box-shadow: 0 0 4px 0 #0A3871 inset, 0 0 8px 4px #0472f8;
+}
+
+
 
 
 @media only screen and (min-width: 768px){
@@ -233,7 +264,7 @@ main{
     }
 
     .buttons{
-        padding: 0 1.25em 0 13.125em;
+        padding: 1.1em 1.25em 0 13.125em;
     }
 
 
